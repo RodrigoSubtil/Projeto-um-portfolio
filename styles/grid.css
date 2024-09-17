@@ -1,0 +1,52 @@
+.plano {
+    font-family: var(--fonte);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    background-color: var(--cor-background-plano);
+    border-radius: 0.8rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 16px;
+    color: var(--cor-principal-letras);
+  }
+  
+  .plano-img {
+    grid-column: 1;   
+    grid-row: 1 / span 2; 
+  }
+  
+  .plano-tempo {
+    grid-column: 2;
+    grid-row: 1;
+
+    font-weight: 700;
+  }
+  
+  .plano-valor {
+    grid-column: 2;
+    grid-row: 2; 
+
+    opacity: 90%;
+  }
+  
+  .plano-alterar {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+
+    padding-left: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--cor-botao-change);
+  }
+
+  .plano-alterar:hover {
+    color: var(--cor-botao-change-hover);
+  }
+
+  @media screen and (max-width: 550px) {
+    .plano {
+      font-size: 22px;
+      max-width: 23rem;
+    }
+  }

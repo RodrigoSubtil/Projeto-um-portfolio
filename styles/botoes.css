@@ -1,0 +1,53 @@
+.botoes {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte);
+    font-size: 15px;
+    align-items: center;
+    gap: 2rem;
+}
+
+.botao-pagar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fonte);
+    padding: 1rem 6.3rem 1rem 6.3rem;
+    border-radius: 0.5rem;
+    background: var(--cor-botao-pagar);
+    color: var(--cor-letra-pagar);
+    border: none;
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-block; /* Para permitir que a âncora tenha sombra ao redor */
+    box-shadow: 0px 14px 25px var(--cor-sombra);
+}
+
+.botao-pagar:hover {
+    background-color: var(--cor-botao-pagar-hover);  
+    cursor: pointer;
+}
+
+.botao-cancelar {
+    font-family: var(--fonte);
+    opacity: 70%;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-principal-letras);
+}
+
+.botao-cancelar:hover {
+    opacity: 100%;
+} 
+
+@media screen and (max-width: 550px) {
+    .botoes {
+        font-size: 22px;
+        max-width: 100%;
+    }
+
+    .botao-pagar {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+}

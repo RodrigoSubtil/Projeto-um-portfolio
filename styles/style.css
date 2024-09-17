@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte: "Red Hat Display", sans-serif;
+    --cor-background: hsl(245, 100%, 66%);
+    --cor-principal-letras: black;
+    --cor-background-main: #ffffff;
+    --cor-background-plano: hsl(225, 100%, 98%);
+    --cor-botao-pagar: hsl(245, 75%, 52%);
+    --cor-botao-pagar-hover: hsl(245, 100%, 73%);
+    --cor-letra-pagar: #ffffff;
+    --cor-botao-change: hsl(245, 75%, 52%);
+    --cor-botao-change-hover: hsl(245, 100%, 73%);
+    --cor-sombra: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--cor-background);
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: var(--fonte);
+    color: var(--cor-principal-letras);
+}
+
+main {
+    background-color: var(--cor-background-main);
+    height: 42rem;
+    width: 28.2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 2.6rem;
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        border-radius: 0 !important;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-principal {
+        width: 100%;
+        height: auto;
+        display: block;
+        border: none;
+        border-radius: 0 !important;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+    }
+}
